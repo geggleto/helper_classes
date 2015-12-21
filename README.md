@@ -28,7 +28,7 @@ class HelloWorldAction extends TheSlimCollective\Helper\BaseAction {
 None!
 
 ## Usage
-$app->get('/hello/world', '\Your\Namespace\HelloWorldAction');
+```php $app->get('/hello/world', '\Your\Namespace\HelloWorldAction'); ```
 
 ## Container
 These Action classes hold a container instance so you can receive dependencies
