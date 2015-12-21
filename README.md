@@ -16,8 +16,8 @@ class HelloWorldAction extends TheSlimCollective\Helper\BaseAction {
     }
     
     public function __invoke (ServerRequestInterface $request, ResponseInterface $response, array $args) {
-    
-        return $response->write("Hello, World");
+        $response = $this->view->render($response, "myview.twig", $args); //this will fetch from the container
+        return $response;
     
     }
 
