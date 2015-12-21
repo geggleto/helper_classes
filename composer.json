@@ -1,0 +1,17 @@
+{
+  "name": "theslimcollective/helper_classes",
+  "authors": [
+    {
+      "name": "Glenn Eggleton",
+      "email": "geggleto@gmail.com"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "TheSlimCollective\\Helper\\" : "src"
+    }
+  },
+  "require": {
+    "slim/slim": "^3.0"
+  }
+}
