@@ -33,7 +33,7 @@ abstract class BaseMiddleware
      * @param \TheSlimCollective\Helper\string $name
      * @return mixed
      */
-    public function __get (string $name)
+    public function __get ($name)
     {
         return $this->container->get($name);
     }
@@ -42,7 +42,7 @@ abstract class BaseMiddleware
      * @param \TheSlimCollective\Helper\string $name
      * @return bool
      */
-    public function __isset (string $name)
+    public function __isset ($name)
     {
         return $this->container->has($name);
     }
