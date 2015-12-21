@@ -32,7 +32,14 @@ class HelloWorldMiddleware extends TheSlimCollective\Helper\BaseMiddleware {
     }
     
     public function __invoke (ServerRequestInterface $request, ResponseInterface $response, callable $next) {
-        return $next($request, $response);
+    
+        //Do stuff before your Action
+           
+        $response = $next($request, $response);
+        
+        //Do Stuff After Your Action
+        
+        return $response;
     }
 
 }
