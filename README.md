@@ -22,13 +22,33 @@ class HelloWorldAction extends TheSlimCollective\Helper\BaseAction {
     }
 
 }
+
+
+class HelloWorldMiddleware extends TheSlimCollective\Helper\BaseMiddleware {
+
+    public function __construct(ContainerInterface $containerInterface)
+    {
+        parent::__construct($containerInterface);
+    }
+    
+    public function __invoke (ServerRequestInterface $request, ResponseInterface $response, callable $next) {
+        return $next($request, $response);
+    }
+
+}
+
 ```
 
 ## Setup/Config
 None!
 
 ## Usage
+
+HelloWorldAction
 ```php $app->get('/hello/world', '\Your\Namespace\HelloWorldAction'); ```
 
+HellWorldMiddleware
+```php $app->add('\Your\Namespace\HelloWorldMiddleware'); ```
+
 ## Container
-These Action classes hold a container instance so you can receive dependencies
+These classes hold a container instance so you can receive dependencies via $this, just like in Slim 2.
