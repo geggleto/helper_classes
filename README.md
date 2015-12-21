@@ -45,10 +45,14 @@ None!
 ## Usage
 
 HelloWorldAction
-```$app->get('/hello/world', '\Your\Namespace\HelloWorldAction');```
+```
+$app->get('/hello/world', '\Your\Namespace\HelloWorldAction');
+```
 
 HellWorldMiddleware
-```$app->add('\Your\Namespace\HelloWorldMiddleware');```
+```
+$app->add('\Your\Namespace\HelloWorldMiddleware'); 
+```
 
 ## Container
 These classes hold a container instance so you can receive dependencies via $this, just like in Slim 2.
