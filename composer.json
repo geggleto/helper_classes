@@ -12,7 +12,6 @@
     }
   },
   "require": {
-    "slim/slim": "^3.0",
-    "monolog/monolog": "1.17.2"
+    "slim/slim": "^3.0"
   }
 }
