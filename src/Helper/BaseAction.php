@@ -6,7 +6,7 @@
  * Time: 8:38 AM
  */
 
-namespace TheSlimCollective\Helper;
+namespace Geggleto\Helper;
 
 
 use Interop\Container\ContainerInterface;
@@ -31,7 +31,7 @@ abstract class BaseAction
     }
 
     /**
-     * @param \TheSlimCollective\Helper\string $name
+     * @param \Geggleto\Helper\string $name
      * @return mixed
      */
     public function __get ($name)
@@ -40,7 +40,7 @@ abstract class BaseAction
     }
 
     /**
-     * @param \TheSlimCollective\Helper\string $name
+     * @param \Geggleto\Helper\string $name
      * @return bool
      */
     public function __isset ($name)

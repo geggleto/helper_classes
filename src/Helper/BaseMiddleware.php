@@ -6,7 +6,7 @@
  * Time: 8:59 AM
  */
 
-namespace TheSlimCollective\Helper;
+namespace Geggleto\Helper;
 
 use Interop\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -30,7 +30,7 @@ abstract class BaseMiddleware
     }
 
     /**
-     * @param \TheSlimCollective\Helper\string $name
+     * @param \Geggleto\Helper\string $name
      * @return mixed
      */
     public function __get ($name)
@@ -39,7 +39,7 @@ abstract class BaseMiddleware
     }
 
     /**
-     * @param \TheSlimCollective\Helper\string $name
+     * @param \Geggleto\Helper\string $name
      * @return bool
      */
     public function __isset ($name)

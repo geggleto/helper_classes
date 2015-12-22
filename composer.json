@@ -1,5 +1,5 @@
 {
-  "name": "theslimcollective/helper_classes",
+  "name": "geggleto/helper_classes",
   "authors": [
     {
       "name": "Glenn Eggleton",
@@ -8,7 +8,7 @@
   ],
   "autoload" : {
     "psr-4" : {
-      "TheSlimCollective\\" : "src"
+      "Geggleto\\" : "src"
     }
   },
   "require": {
