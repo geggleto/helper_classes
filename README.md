@@ -1,4 +1,4 @@
-# TheSlimCollective  Helper Classes
+# Helper Classes
 Slim 3 is a very different beast than Slim 2.
 These Helper classes will help you migrate or start a new project in Slim 3.
  
@@ -8,7 +8,7 @@ These Helper classes will help you migrate or start a new project in Slim 3.
 ```php
 use \Your\Namespace;
 
-class HelloWorldAction extends TheSlimCollective\Helper\BaseAction {
+class HelloWorldAction extends Geggleto\Helper\BaseAction {
 
     public function __construct(ContainerInterface $containerInterface)
     {
@@ -24,7 +24,7 @@ class HelloWorldAction extends TheSlimCollective\Helper\BaseAction {
 }
 
 
-class HelloWorldMiddleware extends TheSlimCollective\Helper\BaseMiddleware {
+class HelloWorldMiddleware extends Geggleto\Helper\BaseMiddleware {
 
     public function __construct(ContainerInterface $containerInterface)
     {
